@@ -1,0 +1,355 @@
+
+/* GENERAL RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* MAIN PAGE */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #50ace0;
+    color: #22252A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background-color: #22252A;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #ffd700;
+    text-decoration: underline;
+}
+
+nav a[aria-current="page"] {
+    color: #ffd700;
+}
+
+/* MAIN CONTENT */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* HOME AND ABOUT SECTION */
+.welcome-section {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* PROFILE PICTURE CONTAINER */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* PROFILE PICTURE */
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #00ccff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* WELCOME HEADING */
+.welcome-section h1 {
+    color: #22252A;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+/* WELCOME PARAGRAPHS */
+.welcome-text {
+    font-size: 1rem;
+    color: #444444;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+/* CLOSING WELCOME MESSAGE */
+.welcome-message {
+    font-weight: bold;
+    color: #22252A;
+    margin: 20px 0;
+}
+
+/* ABOUT PAGE GOALS LIST */
+.goals-list {
+    text-align: left;
+    margin: 20px auto;
+    padding-left: 25px;
+    max-width: 600px;
+}
+
+.goals-list li {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+.goals-list li strong {
+    color: #22252A;
+}
+
+/* CALL-TO-ACTION BUTTON */
+.cta-btn {
+    display: inline-block;
+    background-color: #22252A;
+    color: #ffffff;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    background-color: #40454d;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ==============================
+   CONTACTS PAGE
+   ============================== */
+
+/* CONTACT FORM CONTAINER */
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* CONTACT HEADING */
+.contact-container h1 {
+    color: #22252A;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* CONTACT INTRODUCTION */
+.contact-container > p {
+    color: #444444;
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* FIELDSET */
+.contact-container fieldset {
+    border: 2px solid #50ace0;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* LEGEND */
+.contact-container legend {
+    color: #22252A;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+/* FORM GROUPS */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* FORM LABELS */
+.form-group label {
+    display: block;
+    color: #22252A;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* INPUTS, SELECT, AND TEXTAREA */
+.form-group input,
+.form-group select,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    color: #22252A;
+    background-color: #ffffff;
+    border: 1px solid #b5b5b5;
+    border-radius: 6px;
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* TEXTAREA */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* INPUT FOCUS EFFECTS */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0077aa;
+    box-shadow: 0 0 0 3px rgba(80, 172, 224, 0.25);
+}
+
+/* PLACEHOLDER TEXT */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #777777;
+}
+
+/* CONTACT SUBMIT BUTTON */
+.contact-container .cta-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #22252A;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.2s ease;
+}
+
+/* CONTACT BUTTON HOVER */
+.contact-container .cta-btn:hover {
+    background-color: #40454d;
+    transform: translateY(-2px);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+.contact-container .cta-btn:focus-visible {
+    outline: 3px solid #0077aa;
+    outline-offset: 3px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #22252A;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    width: 100%;
+    margin-top: auto;
+}
+
+
+@media (max-width: 600px) {
+
+    /* HEADER AND NAVIGATION */
+    .header {
+        padding: 15px 10px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    /* MAIN CONTENT */
+    main {
+        padding: 30px 15px;
+    }
+
+    /* HOME AND ABOUT */
+    .welcome-section {
+        padding: 25px 18px;
+    }
+
+    .profile-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .welcome-section h1 {
+        font-size: 1.6rem;
+    }
+
+    .welcome-text {
+        font-size: 0.95rem;
+    }
+
+    .cta-btn {
+        padding: 10px 20px;
+    }
+
+    /* CONTACTS */
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container h1 {
+        font-size: 1.7rem;
+    }
+
+    .contact-container fieldset {
+        padding: 18px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+    }
+}
